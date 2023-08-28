@@ -107,6 +107,9 @@ main{
     width: 5rem;
     height: 5rem
 }
+#tecnologias ul li svg:hover{
+    fill: #00d2df;
+}
 .about-card{
     height: 50vh;
     padding: 6.5%;
