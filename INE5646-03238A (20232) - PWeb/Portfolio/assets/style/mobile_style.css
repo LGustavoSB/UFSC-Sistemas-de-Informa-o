@@ -1,0 +1,59 @@
+
+@media (max-width: 600px){
+    body{
+        font-size: 5vw;
+        width: 100vw;
+    }
+    nav{
+        width: 100vw;
+        padding: 0 2vw 0 2vw;
+    }
+    nav p{
+        font-size: 5vw;
+    }
+    #nav-lista li {
+        margin: 10px 2vw;
+        font-size: 3.5vw;
+    }
+    #inicio {
+        display: block;
+    }
+    #inicio #aside{
+        display: block;
+        padding: 5vh 0 5vh 0;
+    }
+    #inicio #aside img{
+        width: 80vw;
+    }
+    #inicio #tecnologias, #inicio #sobre{
+        display: block;
+        padding: 5vh 0 5vh 0;
+        margin-inline: 10px;
+        text-align: center;
+    }
+    #inicio #tecnologias ul li svg{
+        width: 15vw;
+        height: 15vh;
+    }
+    .about-card{
+        height: auto;
+    }
+    #contatos {
+        background-color: #151515;
+        padding:2vh 0 2vh 0;
+        width: 100vw;
+        height: auto;
+    }
+    #contatos .icon-links{
+        width: 100vw;
+        padding: 0;
+        background-color: #151515;
+    }
+    #contatos .icon-links a svg, #contatos .icon-links a{
+        width: 15vw;
+        height: 15vh;
+    }
+    footer{
+        width: 100vw;
+    }
+}

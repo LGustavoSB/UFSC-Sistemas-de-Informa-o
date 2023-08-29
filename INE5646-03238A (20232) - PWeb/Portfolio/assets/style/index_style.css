@@ -15,6 +15,7 @@ a{
     text-decoration: none;
 }
 a:hover{
+    color: #00d2df;
     text-decoration: underline #00d2df solid 1px;
 }
 a:visited{
@@ -22,7 +23,7 @@ a:visited{
 }
 header{
     position: fixed;
-    width: 100vw;
+    width: 100%;
     z-index: 100;
 }
 nav{
@@ -55,6 +56,9 @@ nav p a, nav p a:visited{
 }
 #nav-lista a{
     color: white;
+}
+#nav-lista a:hover{
+    color: #00d2df;
 }
 main{
 
@@ -118,7 +122,7 @@ main{
     background-color: #151515;
 }
 
-address{
+#contatos{
     text-align: center;
     padding: 10vb;
     display: flex;
