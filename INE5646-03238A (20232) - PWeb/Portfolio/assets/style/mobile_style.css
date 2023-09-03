@@ -1,5 +1,5 @@
 
-@media (max-width: 600px){
+@media (max-width: 768px){
     body{
         font-size: 5vw;
         width: 100vw;
@@ -55,5 +55,21 @@
     }
     footer{
         width: 100vw;
+    }
+/*html_dict style*/
+    h1{
+        margin: 0px;
+        font-size: 3vh;
+        width: 100vw;
+    }
+    #lista-tags{
+    list-style: None;
+    text-align: left;
+    margin-inline: 10vw;
+    margin-block: 5vh;
+    font-size: 5vw;
+}
+    #lista-tags li{
+        padding: 1vh;
     }
 }
