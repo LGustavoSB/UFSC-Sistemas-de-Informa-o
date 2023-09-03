@@ -70,6 +70,7 @@ main{
     padding-block: 5vw;
     display: grid;
     grid-template-columns: 50% 50%;
+    margin-right: 10%;
 }
 #inicio #aside{
     margin-top: 10vh;
@@ -77,7 +78,7 @@ main{
     display: flex;
     align-items: center;
     flex-direction: column;
-    grid-row: 1;
+    grid-row: 1/2;
     grid-column: 1;
 }
 #inicio #aside img{
@@ -87,18 +88,16 @@ main{
 }
 #inicio #infos{
     margin-top: 10vh;
-    grid-row: 1/2;
-    grid-column:2;
-    display: flex;
-    flex-direction: column;
-}
+    display: grid;
 
+}
+#inicio #sobre{
+    grid-row: 1;
+    grid-column:2;
+}
 #inicio #tecnologias{
-    height: 100%;
-    padding: 10vb;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    grid-row: 2;
+    grid-column:2;
 }
 #inicio #tecnologias ul{
     display: flex;
@@ -108,10 +107,7 @@ main{
 #tecnologias ul li svg{
     fill: #06656b;
     width: 5rem;
-    height: 5rem
-}
-#tecnologias ul li svg:hover{
-    fill: #00d2df;
+    height: 5rem;
 }
 .about-card{
     padding: 6.5%;
@@ -146,8 +142,12 @@ main{
     height: 5rem;
     border-radius: 50%;
     fill: #06656b;
+    transition-duration: 1s;
+    transform: scale(100%, 100%);
 }
 .icon-links a svg:hover{
+    transition-duration: 1s;
+    transform: scale(125%, 125%);
     fill: #00d2df;
 }
 footer{

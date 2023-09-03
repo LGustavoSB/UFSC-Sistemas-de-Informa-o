@@ -17,6 +17,7 @@
     }
     #inicio {
         display: block;
+        margin-right: 0;
     }
     #inicio #aside{
         display: block;
