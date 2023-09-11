@@ -4,10 +4,7 @@ function tratadorDeCliqueExercicio6(){
     console.log(stringInvertida)
 }
 
-
 function inverterString(stringNormal){
-    stringNormal = stringNormal.split('');
-    stringInvertida = stringNormal.reverse()
-    stringInvertida = stringInvertida.join('')
+    stringInvertida = stringNormal.split('').reverse().join('');
     return stringInvertida
 }
