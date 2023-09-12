@@ -5,24 +5,37 @@ function obterRegiaoFiscalAtravesDoCPFInformado(cpfInformado) {
     console.log(cpfInformado)
     nonoNumero = cpfInformado.slice(8,9)
     console.log(nonoNumero)
-    let regioesFiscais = new Map()
-    regioesFiscais.set(1, 'DF, GO, MT, MS e TO');
-    regioesFiscais.set(2, 'AC, AP, AM, PA, RO e RR');
-    regioesFiscais.set(3, 'CE, MA e PI');
-    regioesFiscais.set(4, 'AL, PB, PE e RN');
-    regioesFiscais.set(5, 'BA e SE');
-    regioesFiscais.set(6,'MG');
-    regioesFiscais.set(7,'ES e RJ');
-    regioesFiscais.set(8,'SP');
-    regioesFiscais.set(9,'PR e SC');
-    regioesFiscais.set(0,'RS');
-    regioesFiscais[Symbol.iterator]
-    for (const item of regioesFiscais){
-        if (item[0] == nonoNumero){
-            regiaoFiscal = item[1]
-        }
+    switch (nonoNumero){
+        case 1:
+            regiaoFiscal = 'DF, GO, MT, MS e TO'
+            break
+        case 2:
+            regiaoFiscal = 'AC, AP, AM, PA, RO e RR'
+            break
+        case 3:
+            regiaoFiscal = 'CE, MA e PI'
+            break        
+        case 4:
+            regiaoFiscal = 'AL, PB, PE e RN'
+            break
+        case 5:
+            regiaoFiscal = 'BA e SE'
+        case 6:
+            regiaoFiscal = 'MG'
+            break
+        case 7:
+            regiaoFiscal = 'ES e RJ'
+            break
+        case 8:
+            regiaoFiscal = 'SP'
+            break
+        case 9:
+            regiaoFiscal = 'PR e SC'
+            break
+        case 0:
+            regiaoFiscal = 'RS'
+            break
     }
-
     //----------------------------
     return regiaoFiscal
 }
