@@ -1,9 +1,9 @@
 function listarCasos() {
     let todosOsCasos = []
-    for (i = 10; i < 100; i++){
-        if (((i**2).toString()).length == 4){
-            if (testaSoma(i) == true){
-                todosOsCasos.push(i)
+    for (numero = 10; numero < 100; numero++){
+        if (((numero**2).toString()).length == 4){
+            if (testaSoma(numero) == true){
+                todosOsCasos.push(numero)
             }
         }
     }
