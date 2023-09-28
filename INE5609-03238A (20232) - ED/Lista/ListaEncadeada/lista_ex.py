@@ -23,11 +23,12 @@ class Elemento:
 
 
 class Lista:
-    def __init__(self, max_elements):
+    def __init__(self):
         self.__inicio = None
         self.__fim = None
         self.__num_elementos = 0
-        self.__max = max_elements
+        #self.__max = max_elements
+        self.__cursor = None
 
     def inserir_primeiro_elemento(self, valor):
         if self.__inicio is None and self.__fim is None:
@@ -37,8 +38,8 @@ class Lista:
             self.__num_elementos += 1
 
     def inserir_no_inicio(self, valor):
-        if self.__num_elementos >= self.__max:
-            raise Exception("Numero maximo de valores atingido")
+        #if self.__num_elementos >= self.__max:
+        #    raise Exception("Numero maximo de valores atingido")
         novo_inicio = Elemento(valor)
         if self.__inicio is None:
             self.inserir_primeiro_elemento(valor)
@@ -48,8 +49,8 @@ class Lista:
         self.__num_elementos += 1
 
     def inserir_no_fim(self, valor):
-        if self.__num_elementos >= self.__max:
-            raise Exception("Numero maximo de valores atingido")
+        #if self.__num_elementos >= self.__max:
+        #    raise Exception("Numero maximo de valores atingido")
         novo_fim = Elemento(valor)
         if self.__fim is None:
             self.inserir_primeiro_elemento(valor)
@@ -136,6 +137,7 @@ class Lista:
         if self.__num_elementos == 0:
             raise Exception("Não há elementos na lista")
         elemento_atual = self.__inicio
+        print(elemento_atual.valor)
         while elemento_atual.valor != valor_buscado:
             try:
                 elemento_atual = elemento_atual.prox
@@ -151,13 +153,3 @@ class Lista:
     def fim(self):
         return self.__fim
 
-
-lista = Lista(5)
-lista.inserir_no_inicio("1")
-lista.inserir_no_fim("2")
-lista.inserir_no_fim("3")
-
-
-lista.remover('3')
-print(lista.inicio.valor, lista.fim.valor, lista.inicio.prox.valor)
-print(lista.buscar('3'))
