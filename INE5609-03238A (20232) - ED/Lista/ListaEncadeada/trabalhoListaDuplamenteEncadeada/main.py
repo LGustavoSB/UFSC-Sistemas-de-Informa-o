@@ -13,6 +13,7 @@ print('\nInserindo 11 como primeiro')
 lista.inserir_como_primeiro(11)
 lista.buscar(11)
 print(lista.acessar_atual().chave)
+print(lista.listar_lista())
 
 print('\nInserindo 99 como ultimo')
 lista.inserir_como_ultimo(99)

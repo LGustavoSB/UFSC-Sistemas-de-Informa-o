@@ -105,18 +105,24 @@ class Lista:
         elif self.__atual == self.__fim:
             self.excluir_ultimo()
         else:
-            self.__atual.prox.ant = self.__atual.ant
-            self.__atual.ant.prox = self.__atual.prox
+            atual = self.__atual
+            self.__atual = atual.prox
+            atual.prox.ant = atual.ant
+            atual.ant.prox = atual.prox
             self.__numero_elementos -= 1
 
     def excluir_primeiro(self):
         if self.__inicio is not None:
+            if self.__inicio == self.__atual:
+                self.__atual = self.__inicio.prox
             self.__inicio.prox.ant = None
             self.__inicio = self.__inicio.prox
             self.__numero_elementos -= 1
 
     def excluir_ultimo(self):
         if self.__fim is not None:
+            if self.__fim == self.__atual:
+                self.__atual = self.__fim.ant
             self.__fim.ant.prox = None
             self.__fim = self.__fim.ant
             self.__numero_elementos -= 1
